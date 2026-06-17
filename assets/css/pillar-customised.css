@@ -9721,6 +9721,12 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
   font-size: 0.875rem;
 }
 
+.resume-social li a {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
 .resume-social .fa-container {
   font-size: 1rem;
   display: inline-block;
