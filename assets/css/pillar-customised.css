@@ -9693,6 +9693,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
   background: #7d7464;
   color: rgba(255, 255, 255, 0.9);
   height: 220px;
+  position: relative;
 }
 
 .resume-header .picture {
@@ -9719,6 +9720,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 
 .resume-social {
   font-size: 0.875rem;
+  padding-right: 44px;
 }
 
 .resume-social li a {
@@ -9866,4 +9868,120 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
     width: 120px;
     border-radius: 4px;
   }
+}
+
+/*************************** Dark Mode ****************************/
+#theme-toggle {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  border-radius: 0.25rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+[data-theme="dark"] body {
+  background: #1a1a24;
+  color: #c8d0dc;
+}
+[data-theme="dark"] .resume-wrapper-inner {
+  background-color: #252530 !important;
+}
+[data-theme="dark"] .resume-header {
+  background: #3a352e;
+}
+[data-theme="dark"] .resume-section-title {
+  color: #c4956a;
+}
+[data-theme="dark"] .resume-section-title:after {
+  background: #3d4a5c;
+}
+[data-theme="dark"] .resume-section-content {
+  color: #8d99a8;
+}
+[data-theme="dark"] .resume-position-title {
+  color: #c8d0dc;
+}
+[data-theme="dark"] .resume-company-name {
+  color: #8d99a8;
+}
+[data-theme="dark"] .resume-position-time {
+  color: #5c6a7a;
+}
+[data-theme="dark"] .text-muted {
+  color: #5c6a7a !important;
+}
+[data-theme="dark"] a {
+  color: #c4956a;
+}
+[data-theme="dark"] a:hover {
+  color: #ddb080;
+}
+[data-theme="dark"] .resume-header a {
+  color: rgba(255,255,255,0.6);
+}
+[data-theme="dark"] .resume-header a:hover {
+  color: #fff;
+}
+[data-theme="dark"] .badge-primary {
+  background-color: #4a3a2e;
+  color: #d4a870;
+  border-color: #5a4a3a;
+}
+[data-theme="dark"] .badge-light {
+  background-color: #2a3040;
+  color: #8d99a8;
+  border-color: #3a4050;
+}
+[data-theme="dark"] .resume-timeline:before {
+  background: #4a3a2e;
+}
+[data-theme="dark"] .resume-timeline-item:before {
+  background: #252530;
+  border-color: #6a5a4a;
+}
+[data-theme="dark"] .resume-skills-cat,
+[data-theme="dark"] .resume-degree,
+[data-theme="dark"] .resume-award-name,
+[data-theme="dark"] .resume-lang-name {
+  color: #c8d0dc;
+}
+[data-theme="dark"] .resume-degree-org {
+  color: #8d99a8;
+}
+[data-theme="dark"] .resume-degree-time,
+[data-theme="dark"] .resume-award-icon {
+  color: #5c6a7a;
+}
+[data-theme="dark"] .resume-award-desc {
+  color: #8d99a8;
+}
+[data-theme="dark"] .resume-social .fa-container {
+  background: #3a352e;
+  color: #c4956a;
+}
+[data-theme="dark"] .footer {
+  color: #5c6a7a;
+}
+[data-theme="dark"] .footer a {
+  color: #8d99a8;
+}
+[data-theme="dark"] #theme-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+}
+[data-theme="dark"] #theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
