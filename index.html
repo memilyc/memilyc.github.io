@@ -11,6 +11,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 	<script defer src="assets/fontawesome/js/all.min.js"></script>
     <link id="theme-style" rel="stylesheet" href="assets/css/pillar-customised.css">
+    <style>
+        .anchor-copy { display: none; margin-left: .4em; color: #aaa; font-size: .65em; vertical-align: middle; }
+        .resume-section-title:hover .anchor-copy { display: inline; }
+        .anchor-copy:hover { color: #666; text-decoration: none; }
+        [data-theme="dark"] .anchor-copy:hover { color: #ccc; }
+    </style>
     <script>
         // Apply theme before paint to avoid flash
         (function() {
@@ -35,7 +41,7 @@
 				                <li class="mb-3"><a href="mailto:echangw2010@gmail.com"><span class="fa-container text-center mr-2"><i class="far fa-envelope fa-fw"></i></span>echangw2010@gmail.com</a></li>
 								<li class="mb-3"><a href="https://linkedin.com/in/memilyc"><span class="fa-container text-center mr-2"><i class="fab fa-linkedin-in fa-fw"></i></span>linkedin.com/in/memilyc</a></li>
 								<li class="mb-3"><a href="https://github.com/memilyc"><span class="fa-container text-center mr-2"><i class="fab fa-github fa-fw"></i></span>github.com/memilyc</a></li>
-								<li class="mb-3"><a href="https://memilyc.github.io/portfolio/#testimonials"><span class="fa-container text-center mr-2"><i class="fas fa-briefcase fa-fw"></i></span>Emily's Portfolio</a></li>
+								<li class="mb-3"><a href="https://memilyc.github.io/portfolio?theme=brown"><span class="fa-container text-center mr-2"><i class="fas fa-briefcase fa-fw"></i></span>Emily's Portfolio</a></li>
 						    </ul>
 					    </div><!--//secondary-info-->
 				    </div><!--//media-body-->
@@ -44,17 +50,18 @@
 		    </header>
 		    <div class="resume-body p-5">
 			    <section class="resume-section summary-section mb-5">
-				    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary</h2>
+				    <h2 id="career-summary" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary<a href="#career-summary" class="anchor-copy" onclick="copyAnchor(this,'career-summary')" title="Copy link"><i class="fas fa-link"></i></a></h2>
 				    <div class="resume-section-content">
-					    <p class="mb-0">I have 9+ years of experience across fintech software engineering, systems administration, and enterprise SaaS support, supporting customers globally across self-managed and SaaS deployments. From debugging PostgreSQL issues and SSO/SCIM configurations to running live troubleshooting calls and partnering with Sales during critical escalations, I've worked across the full support stack.</p>
-					    <p class="mb-2">Outside of technical work, I've led teams and communities across different settings — from student organisations and a Buddhist youth group where I served as President, to organising cross-regional team events at GitLab, to co-leading the Global Voices TMRG spanning 65+ countries.</p>
-					    <p class="mb-0">This page is a living document of my career — from the tools I've built, to the documentation I've contributed, to the conferences I've presented at. If you're looking for tailored highlights, my <a href="https://linkedin.com/in/memilyc">LinkedIn</a> is a better starting point.</p>
+					    <p class="mb-0">I have 9+ years across fintech software engineering, systems administration, and enterprise SaaS support, working with customers on both self-managed and SaaS deployments globally. That's meant debugging PostgreSQL issues and SSO/SCIM configurations, running live troubleshooting calls, and coordinating with Sales during critical escalations.</p>
+					    <p class="mb-2">Outside of technical work, I've led teams across a few different contexts: a Buddhist youth group (as President), cross-regional meetups at GitLab, and the Global Voices TMRG spanning 65+ countries.</p>
+					    <p class="mb-0">This page covers my full career: the tools I've built, documentation I've contributed to, and conferences I've presented at. For tailored highlights, my <a href="https://linkedin.com/in/memilyc">LinkedIn</a> is a better starting point.</p>
+					    <p class="mb-0">Want something more interactive? My <a href="https://memilyc.github.io/portfolio?theme=brown" target="_blank">portfolio</a> is a good way to get to know me beyond the resume.</p>
 					</div>
 			    </section><!--//summary-section-->
 			    <div class="row">
 				    <div class="col-lg-9">
 					    <section class="resume-section experience-section mb-5">
-						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience</h2>
+						    <h2 id="experience" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience<a href="#experience" class="anchor-copy" onclick="copyAnchor(this,'experience')" title="Copy link"><i class="fas fa-link"></i></a></h2>
 						    <div class="resume-section-content">
 							    <div class="resume-timeline position-relative">
 
@@ -68,16 +75,16 @@
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
 											<ul>
-												<li>Earned promotion to Senior Support Engineer, taking ownership of a portfolio spanning SMB to enterprise accounts up to $9M ARR and adapting communication, urgency, and resolution strategy to each account tier and business criticality.</li>
-												<li>Led multi-stakeholder production outage escalations, coordinating across Sales, Customer Success, and Engineering to restore service and keep business-critical customers informed — as part of a 24/7 on-call rotation every ~5 weeks across Linux, Docker, Kubernetes, AWS, GCP, and Azure.</li>
+												<li>Promoted to Senior Support Engineer, owning a portfolio from SMB to enterprise accounts up to $9M ARR, calibrating communication and resolution strategy to each tier.</li>
+												<li>Restored service for business-critical customers by leading multi-stakeholder outage escalations across Sales, Customer Success, and Engineering, on a 24/7 on-call rotation every ~5 weeks across Linux, Docker, Kubernetes, AWS, GCP, and Azure.</li>
 												<li>Unblocked enterprise accounts up to $3M ARR by resolving SSO/SCIM configuration issues through HAR file analysis and identity provider review, conducting 30-minute discovery and 60-minute troubleshooting calls to drive resolution.</li>
 												<li>Reduced repeat ticket volume by authoring 125+ <a href="https://gitlab.com/groups/gitlab-org/-/merge_requests/?sort=created_date&state=merged&author_username=emchang&first_page_size=20">documentation</a> and <a href="https://gitlab.com/groups/gitlab-com/-/merge_requests/?sort=created_date&state=merged&author_username=emchang&first_page_size=20">handbook</a> updates that enabled customer self-service and closed recurring knowledge gaps across the support org.</li>
-												<li>Protected revenue by partnering with Sales and account teams during at-risk situations, flagging churn signals and supporting upsell opportunities through timely, high-quality resolutions.</li>
-												<li>Became the team's subject matter expert on JIRA integrations, developing internal training materials and running deep-dive troubleshooting sessions that upskilled support engineers and reduced escalations.</li>
+												<li>Retained at-risk revenue by flagging churn signals and supporting upsell opportunities with Sales and account teams.</li>
+												<li>Cut JIRA escalations by becoming the team's go-to on integrations, running deep-dive troubleshooting sessions and writing training materials for support engineers.</li>
 												<li>Restored customer workflows by resolving GitLab REST API and GraphQL integration failures, authentication errors, and query issues that were blocking development teams.</li>
-												<li>Accelerated knowledge transfer and reduced time-to-resolution by leading <a href="https://gitlab.com/gitlab-com/support/support-pairing/-/issues/?sort=created_date&state=closed&search=Emily&first_page_size=50">600+ cross-regional pairing sessions</a> across distributed teams.</li>
-												<li>Built internal tools adopted across the team and company: a <a href="https://postgresql-connection-calculator-759014.gitlab.io/">PostgreSQL Connection Calculator</a>, a <a href="https://utc-to-local-7f6388.gitlab.io/">Time Zone Converter</a>, and the <a href="https://gitlab.com/gitlab-com/support/toolbox/convert-utc-bot">Convert UTC Bot</a>, a Slack app on the Deno SDK that converts UTC timestamps to local time.</li>
-												<li>Supported team scaling by reviewing 50+ technical assessments and conducting 8+ interviews, helping maintain hiring quality during a period of rapid growth.</li>
+												<li>Cut time-to-resolution by leading <a href="https://gitlab.com/gitlab-com/support/support-pairing/-/issues/?sort=created_date&state=closed&search=Emily&first_page_size=50">600+ pairing sessions</a>, including cross-regions, across distributed teams.</li>
+												<li>Shipped three internal tools adopted across the team and company: a <a href="https://postgresql-connection-calculator-759014.gitlab.io/">PostgreSQL Connection Calculator</a>, a <a href="https://utc-to-local-7f6388.gitlab.io/">Time Zone Converter</a>, and the <a href="https://gitlab.com/gitlab-com/support/toolbox/convert-utc-bot">Convert UTC Bot</a>, a Slack app on the Deno SDK that converts UTC timestamps to local time.</li>
+												<li>Maintained hiring quality during rapid growth by reviewing 50+ technical assessments and conducting 8+ interviews.</li>
 											</ul>
 											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
 										    <ul class="list-inline">
@@ -110,14 +117,14 @@
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
 											<ul>
-												<li>Ramped quickly within GitLab's pre-IPO all-remote environment, scaling to support a rapidly growing customer portfolio and support function during a period of significant organisational change.</li>
-												<li>Improved product reliability by collaborating with Engineering to reproduce and ship fixes for complex PostgreSQL, Linux, Gitaly, and Geo issues across self-managed deployments — reducing customer-facing problems at scale.</li>
+												<li>Ramped quickly in GitLab's pre-IPO all-remote environment, supporting a growing customer portfolio through rapid organisational change.</li>
+												<li>Improved product reliability by collaborating with Engineering to reproduce and ship fixes for complex PostgreSQL, Linux, Gitaly, and Geo issues across self-managed deployments.</li>
 												<li>Closed recurring knowledge gaps by systematically converting customer interactions into documentation and handbook improvements, cutting repeated escalations on common issues.</li>
 												<li>Reduced resolution cycles by triaging cases across GitLab <a href="https://gitlab.com/groups/gitlab-org/-/work_items?sort=created_date&state=all&author_username=emchang&first_page_size=20">issues</a> and multiple channels, analysing application, database, and system logs to pinpoint root causes quickly.</li>
 											</ul>
 											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
 											<ul>
-												<li>Awarded a discretionary bonus for organising the FY23-Q3 Visiting Grant meetup in Langkawi, leading nearly 20 team members across multiple countries. Jointly nominated by 9 colleagues for demonstrating Collaboration, Results, Efficiency, Diversity and Transparency.</li>
+												<li>Awarded a discretionary bonus and nominated by 9 colleagues after organising the FY23-Q3 team meetup in Langkawi for nearly 20 members across multiple countries.</li>
 											</ul>
 									    </div><!--//resume-timeline-item-desc-->
 									</article><!--//resume-timeline-item-->
@@ -133,7 +140,7 @@
 									    <div class="resume-timeline-item-desc">
 											<ul>
 												<li>Maintained 99.95% server uptime across Linux and Windows environments through ITIL Incident and Problem Management.</li>
-												<li>Planned and executed JIRA and Confluence upgrade and migration projects for 3,000+ users, cutting client downtime by 40% during scheduled maintenance.</li>
+												<li>Cut client downtime by 40% by planning and executing JIRA and Confluence upgrades and migrations for 3,000+ users.</li>
 												<li>Prevented performance degradation from reaching customers by monitoring server health via automated response-time checks and proactively resolving alert-triggered tickets before issues escalated.</li>
 												<li>Reclaimed hours of manual effort per week by automating routine operational tasks with Bash and PowerShell scripts.</li>
 											    <li>Worked across Germany, Latvia, and Malaysia on infrastructure support and Atlassian product maintenance.</li>
@@ -167,15 +174,15 @@
 									    <div class="resume-timeline-item-desc">
 										    <ul>
 												<li>Delivered custom call and loan repayment workflows for JCollect, a fintech debt collection platform, translating financial institution client requirements into production-ready PHP, Oracle PL/SQL, and IBM DB2 code.</li>
-											    <li>Bridged business and engineering by working directly with financial institution clients to translate loan repayment requirements into technical specifications, conducting discovery meetings and producing detailed process flow diagrams.</li>
+											    <li>Translated loan repayment requirements from financial institution clients into technical specifications, running discovery meetings and producing process flow diagrams.</li>
 												<li>Supported workflow logic accuracy and account status tracking in the collections platform by writing SQL queries and analysing data to validate and debug loan repayment flows.</li>
-												<li>Streamlined webpage setup by designing reusable HTML/CSS template structures, reducing repetitive layout work for the development team.</li>
+												<li>Cut repetitive layout work by designing reusable HTML/CSS template structures for the development team.</li>
 											</ul>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements</h4>
 										    <ul>
 											    <li>Produced a 300+ page Software Requirements Specification including process flows and business descriptions within 3 months.</li>
 												<li>Served as Scrum Master, coordinating sprint cycles and backlog prioritisation.</li>
-												<li>Was selected to voice the IVR system for the company hotline.</li>
+												<li>Voiced the IVR system for the company hotline.</li>
 											</ul>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
 										    <ul class="list-inline">
@@ -216,7 +223,7 @@
 									
 								</div><!--//resume-timeline-->
 								<p></p>
-								<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
+								<h2 id="education" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education<a href="#education" class="anchor-copy" onclick="copyAnchor(this,'education')" title="Copy link"><i class="fas fa-link"></i></a></h2>
 								<div class="resume-section-content">
 									<div class="resume-timeline position-relative">
 									<article class="resume-timeline-item position-relative pb-5">
@@ -291,7 +298,7 @@
 				    <div class="col-lg-3">
 
 					    <section class="resume-section skills-section mb-5">
-						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills &amp; Tools</h2>
+						    <h2 id="skills" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills &amp; Tools<a href="#skills" class="anchor-copy" onclick="copyAnchor(this,'skills')" title="Copy link"><i class="fas fa-link"></i></a></h2>
 						    <div class="resume-section-content">
 
 						        <div class="resume-skill-item mb-3">
@@ -381,26 +388,26 @@
 						</section><!--//skills-section-->
 
 						<section class="resume-section mb-5">
-						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Leadership</h2>
+						    <h2 id="leadership" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Leadership<a href="#leadership" class="anchor-copy" onclick="copyAnchor(this,'leadership')" title="Copy link"><i class="fas fa-link"></i></a></h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled">
 								    <li class="mb-3">
 								        <div class="resume-degree font-weight-bold">Co-lead, Global Voices TMRG</div>
 										<div class="resume-degree-org">GitLab Inc.</div>
 										<div class="resume-degree-time">2026</div>
-										<div class="resume-degree-org">Co-led an employee resource group spanning 65+ countries, driving cross-cultural inclusion and engagement across GitLab's globally distributed workforce.</div>
+										<div class="resume-degree-org">Built cross-cultural connection across 65+ countries as co-lead of GitLab's Global Voices TMRG.</div>
 								    </li>
 								    <li class="mb-3">
 								        <div class="resume-degree font-weight-bold">Team Organiser, Visiting Grant Meetup</div>
 										<div class="resume-degree-org">GitLab Inc.</div>
 										<div class="resume-degree-time">2022</div>
-										<div class="resume-degree-org">Organised the FY23-Q3 team meetup in Langkawi, leading nearly 20 teammates across multiple countries. Awarded a discretionary bonus and jointly nominated by 9 colleagues for demonstrating GitLab's core values.</div>
+										<div class="resume-degree-org">Awarded a discretionary bonus and nominated by 9 colleagues for organising the FY23-Q3 team meetup in Langkawi for nearly 20 teammates across multiple countries.</div>
 								    </li>
 								    <li class="mb-3">
 								        <div class="resume-degree font-weight-bold">President &amp; Publicity Director</div>
 										<div class="resume-degree-org">D2Y Buddhist Youth Organisation</div>
 										<div class="resume-degree-time">2015 - 2019</div>
-										<div class="resume-degree-org">Led the organisation across multiple roles over several years, from Publicity Director to President, organising community events, donation drives, leadership camps, and youth programmes.</div>
+										<div class="resume-degree-org">Served in progressively senior roles from Publicity Director to President, organising community events, donation drives, leadership camps, and youth programmes.</div>
 								    </li>
 								    <li class="mb-3">
 								        <div class="resume-degree font-weight-bold">Student Representative &amp; Peer Leader</div>
@@ -413,7 +420,7 @@
 						</section><!--//leadership-section-->
 					
 						<section class="resume-section education-section mb-5">
-								<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Publication</h2>
+								<h2 id="publication" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Publication<a href="#publication" class="anchor-copy" onclick="copyAnchor(this,'publication')" title="Copy link"><i class="fas fa-link"></i></a></h2>
 								<div class="resume-section-content">
 										<ul class="list-unstyled resume-awards-list">
 											<li class="mb-2 pl-4 position-relative">
@@ -427,7 +434,7 @@
 						</section><!--//publication-section-->
 
 						<section class="resume-section reference-section mb-5">
-								<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Certification</h2>
+								<h2 id="certification" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Certification<a href="#certification" class="anchor-copy" onclick="copyAnchor(this,'certification')" title="Copy link"><i class="fas fa-link"></i></a></h2>
 								<div class="resume-section-content">
 									<ul class="list-unstyled resume-awards-list">
 										<li class="mb-2 pl-4 position-relative">
@@ -447,7 +454,7 @@
 						</section><!--//certification-section-->
 
 						<section class="resume-section education-section mb-5">
-						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Conference</h2>
+						    <h2 id="conference" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Conference<a href="#conference" class="anchor-copy" onclick="copyAnchor(this,'conference')" title="Copy link"><i class="fas fa-link"></i></a></h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled">
 								    <li class="mb-2">
@@ -460,7 +467,7 @@
 										<div class="resume-degree font-weight-bold">International Conference for the Integration of Science, Technology and Society (ICISTS) 2017</div>
 										<div class="resume-degree-org">KAIST, South Korea</div>
 										<div class="resume-degree-time">August 2017</div>
-										<div class="resume-degree-org">Worked on how to increase the usage of Virtual Reality (VR) technology. Presented on a solution of introducing travel through VR.</div>
+										<div class="resume-degree-org">Proposed virtual travel as a use case for increasing VR adoption and presented the solution at the conference.</div>
 									</li>
 									<li class="mb-2">
 										<div class="resume-degree font-weight-bold">ICISTS 2016</div>
@@ -473,21 +480,21 @@
                         </section><!--//conference-section-->
                         
 						<section class="resume-section education-section mb-5">
-						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Volunteer</h2>
+						    <h2 id="volunteer" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Volunteer<a href="#volunteer" class="anchor-copy" onclick="copyAnchor(this,'volunteer')" title="Copy link"><i class="fas fa-link"></i></a></h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled">
 								    <li class="mb-2">
 								        <div class="resume-degree font-weight-bold">Advisor of D2Y</div>
 										<div class="resume-degree-org">Buddhist Youth Organisation</div>
 										<div class="resume-degree-time">March 2019 - March 2023</div>
-										<div class="resume-degree-org">Advise leaders of Buddhist youth group to organise and facilitate youth activities such as donation drives, leadership camp, caroling, amazing race etc. Previously, was appointed as President and Publicity Director.<br>Website: <a href="https://www.instagram.com/d2yofficial/" target="_blank">d2y official</a></div>
+										<div class="resume-degree-org">Supported youth group leaders in organising donation drives, leadership camps, and community events. Previously served as President and Publicity Director.<br>Website: <a href="https://www.instagram.com/d2yofficial/" target="_blank">d2y official</a></div>
 								    </li>
 							    </ul>
 						    </div>
 						</section><!--//volunteer-section-->
 
 					    <section class="resume-section language-section mb-5">
-						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language</h2>
+						    <h2 id="language" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language<a href="#language" class="anchor-copy" onclick="copyAnchor(this,'language')" title="Copy link"><i class="fas fa-link"></i></a></h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled resume-lang-list">
 								    <li class="mb-2"><span class="resume-lang-name font-weight-bold">🇬🇧 English</span> <small class="text-muted font-weight-normal">(Proficient)</small></li>
@@ -499,7 +506,7 @@
 					    </section><!--//language-section-->
 
 					    <section class="resume-section interests-section mb-5">
-						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
+						    <h2 id="interests" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests<a href="#interests" class="anchor-copy" onclick="copyAnchor(this,'interests')" title="Copy link"><i class="fas fa-link"></i></a></h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled">
 								    <li class="mb-1">💞 Community Work</li>
@@ -531,6 +538,11 @@
             updateIcon(next);
         }
         updateIcon(document.documentElement.getAttribute('data-theme'));
+        function copyAnchor(el, id) {
+            navigator.clipboard.writeText(location.href.split('#')[0] + '#' + id);
+            el.title = 'Copied!';
+            setTimeout(function() { el.title = 'Copy link'; }, 1500);
+        }
     </script>
 </body>
 </html>
