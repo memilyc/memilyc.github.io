@@ -20,7 +20,7 @@
     <script>
         // Apply theme before paint to avoid flash
         (function() {
-            var saved = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            var saved = localStorage.getItem('theme') || 'light';
             document.documentElement.setAttribute('data-theme', saved);
         })();
     </script>
@@ -52,8 +52,8 @@
 			    <section class="resume-section summary-section mb-5">
 				    <h2 id="career-summary" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary<a href="#career-summary" class="anchor-copy" onclick="copyAnchor(this,'career-summary')" title="Copy link"><i class="fas fa-link"></i></a></h2>
 				    <div class="resume-section-content">
-					    <p class="mb-0">I have 9+ years across fintech software engineering, systems administration, and enterprise SaaS support, working with customers on both self-managed and SaaS deployments globally. That's meant debugging PostgreSQL issues and SSO/SCIM configurations, running live troubleshooting calls, and coordinating with Sales during critical escalations.</p>
-					    <p class="mb-2">Outside of technical work, I've led teams across a few different contexts: a Buddhist youth group (as President), cross-regional meetups at GitLab, and the Global Voices TMRG spanning 65+ countries.</p>
+					    <p class="mb-0">I have <b>9+ years experience</b> supporting enterprise SaaS, fintech, and DevSecOps platforms in high-availability production environments. Combines deep technical troubleshooting with developer enablement through automation, documentation, and close collaboration with Engineering to improve customer outcomes. Proven track record resolving complex production issues, reproducing software defects across AWS, GCP, Azure, and private infrastructure, and supporting enterprise customers with portfolios worth up to <b>US$9M ARR.</b></p>
+					    <p class="mb-0">Outside of technical work, I've led teams across a few different contexts: a Buddhist youth group (as President), cross-regional meetups at GitLab, and the Global Voices TMRG spanning 65+ countries.</p>
 					    <p class="mb-0">This page covers my full career: the tools I've built, documentation I've contributed to, and conferences I've presented at. For tailored highlights, my <a href="https://linkedin.com/in/memilyc">LinkedIn</a> is a better starting point.</p>
 					    <p class="mb-0">Want something more interactive? My <a href="https://memilyc.github.io/portfolio?theme=brown" target="_blank">portfolio</a> is a good way to get to know me beyond the resume.</p>
 					</div>
@@ -73,18 +73,18 @@
 										    </div><!--//row-->
 										    <div class="resume-position-time">Feb 2024 - June 2026</div>
 									    </div><!--//resume-timeline-item-header-->
+			
 									    <div class="resume-timeline-item-desc">
+											<p>Delivered advanced technical support for GitLab’s Self-Managed platform across APAC, resolving complex production issues, partnering with Engineering on product improvements, and developing tooling to improve support operations.</p>
 											<ul>
-												<li>Promoted to Senior Support Engineer, owning a portfolio from SMB to enterprise accounts up to $9M ARR, calibrating communication and resolution strategy to each tier.</li>
-												<li>Restored service for business-critical customers by leading multi-stakeholder outage escalations across Sales, Customer Success, and Engineering, on a 24/7 on-call rotation every ~5 weeks across Linux, Docker, Kubernetes, AWS, GCP, and Azure.</li>
-												<li>Unblocked enterprise accounts up to $3M ARR by resolving SSO/SCIM configuration issues through HAR file analysis and identity provider review, conducting 30-minute discovery and 60-minute troubleshooting calls to drive resolution.</li>
-												<li>Reduced repeat ticket volume by authoring 125+ <a href="https://gitlab.com/groups/gitlab-org/-/merge_requests/?sort=created_date&state=merged&author_username=emchang&first_page_size=20">documentation</a> and <a href="https://gitlab.com/groups/gitlab-com/-/merge_requests/?sort=created_date&state=merged&author_username=emchang&first_page_size=20">handbook</a> updates that enabled customer self-service and closed recurring knowledge gaps across the support org.</li>
-												<li>Retained at-risk revenue by flagging churn signals and supporting upsell opportunities with Sales and account teams.</li>
-												<li>Cut JIRA escalations by becoming the team's go-to on integrations, running deep-dive troubleshooting sessions and writing training materials for support engineers.</li>
-												<li>Restored customer workflows by resolving GitLab REST API and GraphQL integration failures, authentication errors, and query issues that were blocking development teams.</li>
-												<li>Cut time-to-resolution by leading <a href="https://gitlab.com/gitlab-com/support/support-pairing/-/issues/?sort=created_date&state=closed&search=Emily&first_page_size=50">600+ pairing sessions</a>, including cross-regions, across distributed teams.</li>
-												<li>Shipped three internal tools adopted across the team and company: a <a href="https://postgresql-connection-calculator-759014.gitlab.io/">PostgreSQL Connection Calculator</a>, a <a href="https://utc-to-local-7f6388.gitlab.io/">Time Zone Converter</a>, and the <a href="https://gitlab.com/gitlab-com/support/toolbox/convert-utc-bot">Convert UTC Bot</a>, a Slack app on the Deno SDK that converts UTC timestamps to local time.</li>
-												<li>Maintained hiring quality during rapid growth by reviewing 50+ technical assessments and conducting 8+ interviews.</li>
+												<li>Promoted to <b>Senior Support Engineer</b>, owning a portfolio of SMB to enterprise customers worth up to <b>US$9M ARR</b>, adapting technical engagement and resolution strategies to customer size, business impact, and severity.</li>
+												<li>Reduced resolution times by triaging complex support cases, performing root cause analysis across application, database, and system logs, and partnering with Engineering to reproduce bugs and ship fixes.</li>
+												<li>Restored service for business-critical customers by leading multi-stakeholder outage escalations across Sales, Customer Success, and Engineering, supporting AWS, GCP, Azure, and private infrastructure as part of a <b>24/7 on-call rotation.</b></li>
+												<li>Resolved complex enterprise issues across cloud infrastructure, SSO/SCIM, REST API, GraphQL, and integrations through environment replication, log analysis, and customer troubleshooting sessions, restoring critical development workflows.</li>
+												<li>Reduced repeat support escalations by authoring 125+ <a href="https://gitlab.com/groups/gitlab-org/-/merge_requests/?sort=created_date&state=merged&author_username=emchang&first_page_size=20">documentation</a> and <a href="https://gitlab.com/groups/gitlab-com/-/merge_requests/?sort=created_date&state=merged&author_username=emchang&first_page_size=20">handbook</a> updates that strengthened customer self-service and closed recurring knowledge gaps across self-managed deployments.</li>
+												<li>Improved operations by developing internal tools adopted across the organisation, including a <a href="https://postgresql-connection-calculator-759014.gitlab.io/">PostgreSQL Connection Calculator</a> and the <a href="https://gitlab.com/gitlab-com/support/toolbox/convert-utc-bot">Convert UTC Bot</a>, , later deployed company-wide across 65+ countries.</li>
+												<li>Cut JIRA escalations and time-to-resolution by becoming the team's go-to specialist for integrations, leading <b>600+</b> cross-regional pairing sessions and developing technical training materials for Support Engineers.</li>
+												<li>Supported rapid organisational growth by reviewing <b>50+</b> technical assessments and conducting <b>8+</b> technical interviews.</li>
 											</ul>
 											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
 										    <ul class="list-inline">
@@ -138,12 +138,11 @@
 										    <div class="resume-position-time">May 2018 - August 2020</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
+											<p>Supported enterprise Linux, Windows, and Atlassian environments, delivering infrastructure reliability, platform maintenance, and operational improvements for development teams across Germany, Latvia, and Malaysia.</p>
 											<ul>
-												<li>Maintained 99.95% server uptime across Linux and Windows environments through ITIL Incident and Problem Management.</li>
-												<li>Cut client downtime by 40% by planning and executing JIRA and Confluence upgrades and migrations for 3,000+ users.</li>
-												<li>Prevented performance degradation from reaching customers by monitoring server health via automated response-time checks and proactively resolving alert-triggered tickets before issues escalated.</li>
-												<li>Reclaimed hours of manual effort per week by automating routine operational tasks with Bash and PowerShell scripts.</li>
-											    <li>Worked across Germany, Latvia, and Malaysia on infrastructure support and Atlassian product maintenance.</li>
+												<li> Maintained <b>99.95%</b> server uptime across Linux and Windows environments, supporting <b>production systems</b> through ITIL-based Incident and Problem Management.</li>
+												<li>Reduced client downtime by <b>40%</b> by delivering Jira and Confluence upgrades and migrations for <b>3,000+</b> users.</li>
+												<li>Improved operational efficiency by automating routine administration with Bash and PowerShell while proactively monitoring server health to prevent customer-impacting incidents.</li>
 											</ul>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
 										    <ul>
@@ -172,16 +171,15 @@
 										    <div class="resume-position-time">Sep 2017 – May 2018</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
+											<p>Developed and supported enterprise loan management solutions, translating business requirements into technical solutions while contributing to Agile software delivery.</p>
 										    <ul>
-												<li>Delivered custom call and loan repayment workflows for JCollect, a fintech debt collection platform, translating financial institution client requirements into production-ready PHP, Oracle PL/SQL, and IBM DB2 code.</li>
-											    <li>Translated loan repayment requirements from financial institution clients into technical specifications, running discovery meetings and producing process flow diagrams.</li>
-												<li>Supported workflow logic accuracy and account status tracking in the collections platform by writing SQL queries and analysing data to validate and debug loan repayment flows.</li>
-												<li>Cut repetitive layout work by designing reusable HTML/CSS template structures for the development team.</li>
+												<li>Developed and debugged custom workflows within the <b>JCollect</b> platform using Oracle PL/SQL and IBM DB2, resolving workflow and backend data issues.</li>
+												<li>Translated client requirements into technical specifications through discovery workshops and process flow documentation.</li>
+												<li> Coordinated Agile delivery as Scrum Master, facilitating sprint planning and backlog prioritisation across engineering and business teams.</li>
 											</ul>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements</h4>
 										    <ul>
 											    <li>Produced a 300+ page Software Requirements Specification including process flows and business descriptions within 3 months.</li>
-												<li>Served as Scrum Master, coordinating sprint cycles and backlog prioritisation.</li>
 												<li>Voiced the IVR system for the company hotline.</li>
 											</ul>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
@@ -235,7 +233,7 @@
 											<div class="resume-position-time">2014 - 2017</div>
 										</div><!--//resume-timeline-item-header-->
 										<div class="resume-timeline-item-desc">
-												<p>In affiliation with Lancaster University, UK. CGPA: 3.92/4.0</p>
+												<p>In affiliation with Lancaster University, UK.(CGPA: 3.92/4.0)</p>
 												<h4 class="resume-timeline-item-desc-heading font-weight-bold">Courses:</h4>
 												<ul class="list-inline">
 													<li class="list-inline-item"><span class="badge badge-primary badge-pill">Artificial Intelligence</span></li>
@@ -395,7 +393,7 @@
 								        <div class="resume-degree font-weight-bold">Co-lead, Global Voices TMRG</div>
 										<div class="resume-degree-org">GitLab Inc.</div>
 										<div class="resume-degree-time">2026</div>
-										<div class="resume-degree-org">Built cross-cultural connection across 65+ countries as co-lead of GitLab's Global Voices TMRG.</div>
+										<div class="resume-degree-org">Fostered cross-cultural collaboration across GitLab’s globally distributed workforce spanning 65+ countries, promoting inclusion and stronger connections across regional teams.</div>
 								    </li>
 								    <li class="mb-3">
 								        <div class="resume-degree font-weight-bold">Team Organiser, Visiting Grant Meetup</div>
@@ -461,7 +459,7 @@
 								        <div class="resume-degree font-weight-bold">Future of Information and Communication Conference (FICC) 2018</div>
 								        <div class="resume-degree-org">Singapore</div>
 										<div class="resume-degree-time">April 2018</div>
-										<div class="resume-degree-org">Presented my paper titled "SQL &amp; NoSQL Database Comparison".</div>
+										<div class="resume-degree-org">Presented my paper titled "SQL &amp; NoSQL Database Comparison" which is published on <a href="https://link.springer.com/chapter/10.1007/978-3-030-03402-3_20">Springer</a>.</div>
 									</li>
 									<li class="mb-2">
 										<div class="resume-degree font-weight-bold">International Conference for the Integration of Science, Technology and Society (ICISTS) 2017</div>
@@ -497,9 +495,9 @@
 						    <h2 id="language" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language<a href="#language" class="anchor-copy" onclick="copyAnchor(this,'language')" title="Copy link"><i class="fas fa-link"></i></a></h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled resume-lang-list">
-								    <li class="mb-2"><span class="resume-lang-name font-weight-bold">🇬🇧 English</span> <small class="text-muted font-weight-normal">(Proficient)</small></li>
-								    <li class="mb-2 align-middle"><span class="resume-lang-name font-weight-bold">🇨🇳 Chinese - Mandarin &amp; Cantonese</span> <small class="text-muted font-weight-normal">(Proficient)</small></li>
-									<li class="mb-2"><span class="resume-lang-name font-weight-bold">🇲🇾 Malay</span> <small class="text-muted font-weight-normal">(Proficient)</small></li>
+								    <li class="mb-2"><span class="resume-lang-name font-weight-bold">🇬🇧 English</span> <small class="text-muted font-weight-normal">(Fluent)</small></li>
+								    <li class="mb-2 align-middle"><span class="resume-lang-name font-weight-bold">🇨🇳 Chinese - Mandarin &amp; Cantonese</span> <small class="text-muted font-weight-normal">(Fluent)</small></li>
+									<li class="mb-2"><span class="resume-lang-name font-weight-bold">🇲🇾 Malay</span> <small class="text-muted font-weight-normal">(Fluent)</small></li>
 									<li class="mb-2"><span class="resume-lang-name font-weight-bold">🇰🇷 Korean</span> <small class="text-muted font-weight-normal">(Intermediate, Level 4)</small></li>
 							    </ul>
 						    </div>
