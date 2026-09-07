@@ -28,7 +28,7 @@
 <body>	
     <article class="resume-wrapper text-center position-relative">
 	    <div class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
-		    <header class="resume-header pt-4 pt-md-0">
+		    <header id="resume-header" class="resume-header pt-4 pt-md-0">
 			    <div class="media flex-column flex-md-row">
 				    <img class="mr-3 img-fluid picture mx-auto" src="assets/images/profile.png" alt="profile picture">
 				    <div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
@@ -46,8 +46,22 @@
 					    </div><!--//secondary-info-->
 				    </div><!--//media-body-->
 			    </div><!--//media-->
-		    	<button id="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode" aria-label="Toggle dark mode"><i id="theme-icon" class="fas fa-moon"></i></button>
-		    </header>
+            <button class="theme-toggle" type="button" data-theme-toggle title="Switch to dark theme" aria-label="Switch to dark theme"><i class="fas fa-moon theme-icon-light" aria-hidden="true"></i><i class="fas fa-sun theme-icon-dark" aria-hidden="true"></i></button>
+            </header>
+            <nav id="resume-toolbar" class="resume-toolbar" aria-label="Resume quick actions" hidden>
+                <div class="resume-toolbar-inner">
+                    <p class="resume-toolbar-identity mb-0">M. Emily Chang - Technical Support Engineer | Open to work</p>
+                    <img class="resume-toolbar-picture" src="assets/images/profile.png" alt="M. Emily Chang">
+                    <div class="resume-toolbar-actions">
+                        <a class="resume-toolbar-action" href="assets/download/EmilyChang_Resume.pdf" download aria-label="Download resume" title="Download resume"><i class="fas fa-download" aria-hidden="true"></i><span class="sr-only">Download resume</span></a>
+                        <a class="resume-toolbar-action" href="mailto:echangw2010@gmail.com" data-tooltip="Email" aria-label="Email M. Emily Chang" title="Email"><i class="far fa-envelope" aria-hidden="true"></i><span class="sr-only">Email M. Emily Chang</span></a>
+                        <a class="resume-toolbar-action" href="https://linkedin.com/in/memilyc" data-tooltip="LinkedIn" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+                        <a class="resume-toolbar-action" href="https://github.com/memilyc" data-tooltip="GitHub" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a>
+                        <a class="resume-toolbar-action" href="https://memilyc.github.io/portfolio?theme=brown" data-tooltip="Portfolio" aria-label="Portfolio" title="Portfolio"><i class="fas fa-briefcase" aria-hidden="true"></i><span class="sr-only">Portfolio</span></a>
+                        <button class="theme-toggle resume-toolbar-action" type="button" data-theme-toggle title="Switch to dark theme" aria-label="Switch to dark theme"><i class="fas fa-moon theme-icon-light" aria-hidden="true"></i><i class="fas fa-sun theme-icon-dark" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </nav>
 		    <div class="resume-body p-5">
 			    <section class="resume-section summary-section mb-5">
 				    <h2 id="career-summary" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary<a href="#career-summary" class="anchor-copy" onclick="copyAnchor(this,'career-summary')" title="Copy link"><i class="fas fa-link"></i></a></h2>
@@ -68,10 +82,11 @@
 								    <article class="resume-timeline-item position-relative pb-5">
 									    <div class="resume-timeline-item-header mb-2">
 										    <div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Senior Support Engineer (Fully remote)</h3> 
-										        <div class="resume-company-name ml-auto">GitLab Inc.</div>
+												<h3 class="resume-position-title font-weight-bold mb-1">GitLab Inc.</h3> 
+										        <div class="resume-company-name ml-auto">Aug 2020 - Jun 2026</div>
 										    </div><!--//row-->
-										    <div class="resume-position-time">Feb 2024 - June 2026</div>
+										    <div class="resume-company-name ml-auto">Senior Support Engineer | Feb 2024 - Jun 2026</div>
+											<div class="resume-company-name ml-auto"> Support Engineer | Aug 2020 - Feb 2024</div>
 									    </div><!--//resume-timeline-item-header-->
 			
 									    <div class="resume-timeline-item-desc">
@@ -85,6 +100,10 @@
 												<li>Improved operations by developing internal tools adopted across the organisation, including a <a href="https://postgresql-connection-calculator-759014.gitlab.io/">PostgreSQL Connection Calculator</a> and the <a href="https://gitlab.com/gitlab-com/support/toolbox/convert-utc-bot">Convert UTC Bot</a>, , later deployed company-wide across 65+ countries.</li>
 												<li>Cut JIRA escalations and time-to-resolution by becoming the team's go-to specialist for integrations, leading <b>600+</b> cross-regional pairing sessions and developing technical training materials for Support Engineers.</li>
 												<li>Supported rapid organisational growth by reviewing <b>50+</b> technical assessments and conducting <b>8+</b> technical interviews.</li>
+											</ul>
+											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
+											<ul>
+												<li>Awarded a discretionary bonus and nominated by 9 colleagues after organising the FY23-Q3 team meetup in Langkawi for nearly 20 members across multiple countries.</li>
 											</ul>
 											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
 										    <ul class="list-inline">
@@ -107,27 +126,6 @@
 									    </div><!--//resume-timeline-item-desc-->
 									</article><!--//resume-timeline-item-->
 
-									<article class="resume-timeline-item position-relative pb-5">
-									    <div class="resume-timeline-item-header mb-2">
-										    <div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Support Engineer (Fully remote)</h3> 
-										        <div class="resume-company-name ml-auto">GitLab Inc.</div>
-										    </div><!--//row-->
-										    <div class="resume-position-time">Aug 2020 - Feb 2024</div>
-									    </div><!--//resume-timeline-item-header-->
-									    <div class="resume-timeline-item-desc">
-											<ul>
-												<li>Ramped quickly in GitLab's pre-IPO all-remote environment, supporting a growing customer portfolio through rapid organisational change.</li>
-												<li>Improved product reliability by collaborating with Engineering to reproduce and ship fixes for complex PostgreSQL, Linux, Gitaly, and Geo issues across self-managed deployments.</li>
-												<li>Closed recurring knowledge gaps by systematically converting customer interactions into documentation and handbook improvements, cutting repeated escalations on common issues.</li>
-												<li>Reduced resolution cycles by triaging cases across GitLab <a href="https://gitlab.com/groups/gitlab-org/-/work_items?sort=created_date&state=all&author_username=emchang&first_page_size=20">issues</a> and multiple channels, analysing application, database, and system logs to pinpoint root causes quickly.</li>
-											</ul>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
-											<ul>
-												<li>Awarded a discretionary bonus and nominated by 9 colleagues after organising the FY23-Q3 team meetup in Langkawi for nearly 20 members across multiple countries.</li>
-											</ul>
-									    </div><!--//resume-timeline-item-desc-->
-									</article><!--//resume-timeline-item-->
 									
 								    <article class="resume-timeline-item position-relative pb-5">
 									    <div class="resume-timeline-item-header mb-2">
@@ -135,15 +133,28 @@
 										        <h3 class="resume-position-title font-weight-bold mb-1">System Administrator</h3>
 										        <div class="resume-company-name ml-auto">Arvato Systems Malaysia Sdn. Bhd.</div>
 										    </div><!--//row-->
-										    <div class="resume-position-time">May 2018 - August 2020</div>
+										    <div class="resume-position-time">Feb 2019 - August 2020</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
 											<p>Supported enterprise Linux, Windows, and Atlassian environments, delivering infrastructure reliability, platform maintenance, and operational improvements for development teams across Germany, Latvia, and Malaysia.</p>
 											<ul>
-												<li> Maintained <b>99.95%</b> server uptime across Linux and Windows environments, supporting <b>production systems</b> through ITIL-based Incident and Problem Management.</li>
+												<li>Maintained <b>99.95%</b> server uptime across Linux and Windows environments, supporting <b>production systems</b> through ITIL-based Incident and Problem Management.</li>
 												<li>Reduced client downtime by <b>40%</b> by delivering Jira and Confluence upgrades and migrations for <b>3,000+</b> users.</li>
 												<li>Improved operational efficiency by automating routine administration with Bash and PowerShell while proactively monitoring server health to prevent customer-impacting incidents.</li>
 											</ul>
+									    </div><!--//resume-timeline-item-desc-->
+								    </article><!--//resume-timeline-item-->
+								    
+									<article class="resume-timeline-item position-relative pb-5">
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Associate System Administrator</h3>
+										        <div class="resume-company-name ml-auto">Arvato Systems Malaysia Sdn. Bhd.</div>
+										    </div><!--//row-->
+										    <div class="resume-position-time">May 2018 - Feb 2019</div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+											<p>Joined Arvato Systems as an Associate System Administrator, supporting Linux and Windows infrastructure and Atlassian product maintenance before being promoted within 10 months.</p>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
 										    <ul>
 												<li>Awarded STAR Award by Head of Department (Custom Application Services, Germany). Also named Champion in Innovation Day 2019.</li>
@@ -161,7 +172,7 @@
 										    </ul>
 									    </div><!--//resume-timeline-item-desc-->
 								    </article><!--//resume-timeline-item-->
-								    
+
 								    <article class="resume-timeline-item position-relative pb-5">
 									    <div class="resume-timeline-item-header mb-2">
 										    <div class="d-flex flex-column flex-md-row">
@@ -525,17 +536,53 @@
 
 
     <script>
-        function updateIcon(theme) {
-            document.getElementById('theme-icon').className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        function updateThemeControls(theme) {
+            var darkTheme = theme === 'dark';
+            var label = darkTheme ? 'Switch to light theme' : 'Switch to dark theme';
+            document.querySelectorAll('[data-theme-toggle]').forEach(function(control) {
+                control.title = label;
+                control.setAttribute('aria-label', label);
+                control.setAttribute('aria-pressed', darkTheme);
+            });
         }
         function toggleTheme() {
             var current = document.documentElement.getAttribute('data-theme');
             var next = current === 'dark' ? 'light' : 'dark';
             document.documentElement.setAttribute('data-theme', next);
             localStorage.setItem('theme', next);
-            updateIcon(next);
+            updateThemeControls(next);
         }
-        updateIcon(document.documentElement.getAttribute('data-theme'));
+        document.querySelectorAll('[data-theme-toggle]').forEach(function(control) {
+            control.addEventListener('click', toggleTheme);
+        });
+        updateThemeControls(document.documentElement.getAttribute('data-theme'));
+
+        (function() {
+            var resumeHeader = document.getElementById('resume-header');
+            var resumeToolbar = document.getElementById('resume-toolbar');
+            var toolbarVisible = false;
+            var updateScheduled = false;
+
+            function updateToolbarVisibility() {
+                var shouldShow = resumeHeader.getBoundingClientRect().bottom <= 0;
+                if (shouldShow !== toolbarVisible) {
+                    resumeToolbar.hidden = !shouldShow;
+                    toolbarVisible = shouldShow;
+                }
+                updateScheduled = false;
+            }
+
+            function scheduleToolbarUpdate() {
+                if (!updateScheduled) {
+                    updateScheduled = true;
+                    window.requestAnimationFrame(updateToolbarVisibility);
+                }
+            }
+
+            updateToolbarVisibility();
+            window.addEventListener('scroll', scheduleToolbarUpdate, { passive: true });
+            window.addEventListener('resize', scheduleToolbarUpdate);
+        })();
         function copyAnchor(el, id) {
             navigator.clipboard.writeText(location.href.split('#')[0] + '#' + id);
             el.title = 'Copied!';
